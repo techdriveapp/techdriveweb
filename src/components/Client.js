@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 function Client() {
   return (
@@ -38,8 +39,8 @@ function Client() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <img
-              src="path_to_client_image_1.jpg" // Replace with actual image path
+            <Image
+              src="" // Replace with actual image path
               alt="Client 1"
               className="w-32 h-32 rounded-full mx-auto mb-2"
             />
@@ -56,8 +57,8 @@ function Client() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <img
-              src="path_to_client_image_2.jpg" // Replace with actual image path
+            <Image
+              src="" // Replace with actual image path
               alt="Client 2"
               className="w-32 h-32 rounded-full mx-auto mb-2"
             />
@@ -74,8 +75,8 @@ function Client() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <img
-              src="path_to_client_image_3.jpg" // Replace with actual image path
+            <Image
+              src="" // Replace with actual image path
               alt="Client 3"
               className="w-32 h-32 rounded-full mx-auto mb-2"
             />
@@ -92,8 +93,8 @@ function Client() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <img
-              src="path_to_client_image_4.jpg" // Replace with actual image path
+            <Image
+              src="" // Replace with actual image path
               alt="Client 4"
               className="w-32 h-32 rounded-full mx-auto mb-2"
             />
@@ -110,8 +111,8 @@ function Client() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <img
-              src="path_to_client_image_5.jpg" // Replace with actual image path
+            <Image
+              src="" // Replace with actual image path
               alt="Client 5"
               className="w-32 h-32 rounded-full mx-auto mb-2"
             />
