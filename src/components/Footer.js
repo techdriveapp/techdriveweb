@@ -9,12 +9,12 @@ function Footer() {
           {/* Left section: Logo, company name, and addresses */}
           <div className="flex flex-col items-center lg:items-start space-y-4 lg:space-y-6 w-full lg:w-1/3">
             <h1 className="text-2xl font-bold text-blue-500">TechDrive</h1>
-            <p className="text-lg">
+            <p className="text-lg text-center lg:text-left">
               A Subsidiary of Miilan Helping Hand India Pvt Ltd
             </p>
 
             {/* Corporate Address */}
-            <div>
+            <div className="text-center lg:text-left">
               <h2 className="text-sm font-bold">Corporate Address:</h2>
               <address className="text-sm not-italic leading-relaxed">
                 5/164K Pahariya <br />
@@ -24,7 +24,7 @@ function Footer() {
             </div>
 
             {/* Local Office Address */}
-            <div>
+            <div className="text-center lg:text-left">
               <h2 className="text-sm font-bold">Local Office Address:</h2>
               <address className="text-sm not-italic leading-relaxed">
                 TechDrive Office, Plot No. 21, <br />
@@ -32,7 +32,7 @@ function Footer() {
               </address>
             </div>
 
-            <p className="mt-2 text-sm">
+            <p className="mt-2 text-sm text-center lg:text-left">
               <span className="font-bold">Helpline:</span> +91-9120163229
             </p>
           </div>
@@ -41,7 +41,9 @@ function Footer() {
           <div className="flex flex-col lg:flex-row lg:w-2/3 justify-between">
             {/* Quick Links */}
             <div className="flex flex-col space-y-6 text-sm">
-              <h2 className="text-lg font-bold">Quick Links</h2>
+              <h2 className="text-lg font-bold text-center lg:text-left">
+                Quick Links
+              </h2>
 
               {/* About, Blogs, Contact, Services */}
               <div>
@@ -94,7 +96,7 @@ function Footer() {
             </div>
 
             {/* Right section: Current City and Upcoming Cities */}
-            <div className="text-sm mt-6 lg:mt-0 lg:ml-10">
+            <div className="text-sm mt-6 lg:mt-0 lg:ml-10 text-center lg:text-left">
               <h2 className="text-lg font-bold">Current Cities:</h2>
               <ul className="list-none">
                 <li className="text-sm">Varanasi, UP</li>

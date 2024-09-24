@@ -4,7 +4,7 @@ import React from "react";
 const Hero = () => {
   return (
     <div className="pt-1">
-      <div className="relative bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 h-screen flex items-center justify-center">
+      <div className="relative bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 h-screen flex items-center justify-center ">
         <div className="absolute top-10 mt-8 px-6 py-2 bg-gray-800 bg-opacity-70 rounded-full text-gray-200 text-sm">
           Announcing our next way of learning to drive.{" "}
           <span className="underline text-white cursor-pointer">
@@ -14,13 +14,20 @@ const Hero = () => {
 
         <div className="text-center text-white px-4">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight">
-            Book Your First Lesson
+            Start Your Self-Driving Journey
           </h1>
-          <p className="mt-4 text-lg sm:text-xl max-w-md mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold">
+            Personalized Training Tailored Just for You
+          </h2>
+          <p className="mt-2 text-base sm:text-lg max-w-md mx-auto">
+            Experience the convenience of learning to drive with expert
+            instructors at your doorstep.
+          </p>
+          {/* <p className="mt-4 text-lg sm:text-xl max-w-md mx-auto">
             Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
             lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
             fugiat aliqua.
-          </p>
+          </p> */}
 
           <div className="flex justify-center mt-6 space-x-4">
             <button className="flex items-center bg-black text-white px-4 py-2 rounded-lg shadow-lg">

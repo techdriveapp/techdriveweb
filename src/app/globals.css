@@ -20,3 +20,48 @@
     text-wrap: balance;
   }
 }
+@keyframes scrollUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-scrollUp {
+  animation: scrollUp 4s linear forwards; /* Adjust duration as needed */
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite; /* Adjust duration for speed */
+  display: flex; /* Ensure the cards are displayed in a row */
+  flex-wrap: nowrap; /* Prevent wrapping */
+}
+@keyframes border-animation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-border {
+  animation: border-animation 2s linear infinite;
+  border-top: 2px solid blue; /* Change this color to your preferred border color */
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+}
