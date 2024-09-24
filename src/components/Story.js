@@ -1,5 +1,6 @@
 "use client"; // use client
 import React, { useEffect, useRef } from "react";
+import Image from "next/image";
 
 // Ensure image paths are correct or dynamically imported
 const testimonials = [
@@ -53,7 +54,7 @@ function Story() {
               key={testimonial.id}
               className="inline-block bg-white p-4 rounded shadow w-92 h-[300px] text-center"
             >
-              <img
+              <Image
                 src={testimonial.image}
                 alt={`Testimonial from ${testimonial.name}`}
                 className="w-16 h-16 rounded-full mx-auto mb-2"
