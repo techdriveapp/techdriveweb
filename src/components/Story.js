@@ -8,13 +8,13 @@ const testimonials = [
     id: 1,
     name: "Alice",
     story: "This service changed my life!",
-    image: "path/to/image1.jpg",
+    image: "",
   },
   {
     id: 2,
     name: "Bob",
     story: "I learned to drive in no time!",
-    image: "path/to/image2.jpg",
+    image: "",
   },
   // Add more testimonials...
 ];

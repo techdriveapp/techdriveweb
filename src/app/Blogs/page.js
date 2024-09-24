@@ -60,7 +60,7 @@ function Page() {
         "Learn how offering exclusive discounts on driving school courses can increase customer loyalty and improve the buying experience.",
       author: "Priya Sharma",
       date: "September 18, 2024",
-      image: "https://images.unsplash.com/photo-1560448204-e78442f205d4", // Discount image
+      image: "", // Discount image
     },
     {
       id: 7,
@@ -69,7 +69,7 @@ function Page() {
         "Stay ahead of the competition by exploring the latest trends in the automotive industry and how driving schools can support your dealership's growth.",
       author: "Arjun Mehta",
       date: "September 17, 2024",
-      image: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf", // Automotive trends image
+      image: "", // Automotive trends image
     },
     {
       id: 8,
@@ -78,7 +78,7 @@ function Page() {
         "Building a positive brand reputation is essential for long-term success. Learn how driving schools can contribute to your dealership's public image.",
       author: "Simran Kaur",
       date: "September 16, 2024",
-      image: "https://images.unsplash.com/photo-1570786151451-c37f7e88b640", // Brand reputation image
+      image: "", // Brand reputation image
     },
   ];
 
@@ -102,6 +102,8 @@ function Page() {
                 className="h-48 w-full object-cover"
                 src={blog.image}
                 alt={blog.title}
+                width={500} // Set a width for the image
+                height={300} // Set a height for the image
               />
               <div className="p-6">
                 <h2 className="text-xl font-semibold text-gray-900">
