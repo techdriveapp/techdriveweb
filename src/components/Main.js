@@ -30,8 +30,8 @@ function Main() {
           ensuring you feel supported every step of the way. For those looking
           to enhance their skills, our SMART program fine-tunes your abilities
           to help you become a professional driver. With TechDrive’s driving
-          courses, you'll learn to drive safely and confidently, equipped with
-          the skills necessary for the road ahead.
+          courses you ll learn to drive safely and confidently equipped with the
+          skills necessary for the road ahead.
         </p>
       </div>
     </div>
