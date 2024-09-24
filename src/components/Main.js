@@ -13,11 +13,10 @@ function Main() {
         </h2>
         <p className="mt-2 md:mt-4 text-base md:text-lg text-gray-700">
           We, at TechDrive, believe that everyone deserves to be safe on the
-          road, and this very concept has inspired us to launch "TechDrive
-          Driving School." Our mission is to transform you into a responsible
-          driver who navigates the streets with confidence and ease. With
-          TechDrive, you’re not just learning to drive; you’re becoming road
-          ready.
+          road, and this very concept has inspired us to launch TechDrive
+          Driving. Our mission is to transform you into a responsible driver who
+          navigates the streets with confidence and ease. With TechDrive, you’re
+          not just learning to drive you’re becoming road ready.
         </p>
         <p className="mt-2 md:mt-4 text-base md:text-lg text-gray-700">
           At TechDrive Driving Academy, we offer a range of personalized driving
