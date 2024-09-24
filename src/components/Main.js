@@ -13,7 +13,7 @@ function Main() {
         </h2>
         <p className="mt-2 md:mt-4 text-base md:text-lg text-gray-700">
           We, at TechDrive, believe that everyone deserves to be safe on the
-          road, and this very concept has inspired us to launch TechDrive
+          road and this very concept has inspired us to launch TechDrive
           Driving. Our mission is to transform you into a responsible driver who
           navigates the streets with confidence and ease. With TechDrive, you’re
           not just learning to drive you’re becoming road ready.
@@ -28,8 +28,8 @@ function Main() {
         <p className="mt-2 md:mt-4 text-base md:text-lg text-gray-700">
           Our START program is designed with empathy for novice drivers,
           ensuring you feel supported every step of the way. For those looking
-          to enhance their skills, our SMART program fine-tunes your abilities
-          to help you become a professional driver. With TechDrive’s driving
+          to enhance their skills our SMART program fine-tunes your abilities to
+          help you become a professional driver. With TechDrive’s driving
           courses you ll learn to drive safely and confidently equipped with the
           skills necessary for the road ahead.
         </p>
