@@ -2,7 +2,7 @@ import React from "react";
 
 import { PhotoIcon, UserCircleIcon } from "@heroicons/react/24/solid";
 
-function page() {
+function Page() {
   return (
     <div className="bg-gray-200 flex flex-col items-center py-20">
       <header className="w-full bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-black py-10 text-center shadow-lg">
@@ -152,4 +152,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;

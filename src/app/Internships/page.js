@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 
-function page() {
+function Page() {
   const internships = [
     {
       interncode: "I001",
@@ -107,4 +107,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;

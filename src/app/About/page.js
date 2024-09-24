@@ -1,5 +1,6 @@
 "use client"; // use client
 import React, { useEffect } from "react";
+import Image from "next/image";
 
 const teamMembers = [
   { name: "John Doe", position: "CEO", imageUrl: "team-member-image-url-1" },
@@ -12,7 +13,7 @@ const teamMembers = [
   { name: "Bob Brown", position: "CFO", imageUrl: "team-member-image-url-4" },
 ];
 
-const page = () => {
+const Page = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -26,11 +27,6 @@ const page = () => {
             We are committed to delivering the best solutions for your business
             needs.
           </p>
-          <img
-            src="your-hero-image-url"
-            alt="About Us"
-            className="mt-8 mx-auto w-full h-64 object-cover rounded-lg shadow-lg"
-          />
         </div>
       </section>
 
@@ -161,4 +157,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
