@@ -1,6 +1,7 @@
 "use client"; // use client
 import React, { useEffect, useRef } from "react";
 
+// Ensure image paths are correct or dynamically imported
 const testimonials = [
   {
     id: 1,
@@ -14,54 +15,7 @@ const testimonials = [
     story: "I learned to drive in no time!",
     image: "path/to/image2.jpg",
   },
-  {
-    id: 3,
-    name: "Charlie",
-    story: "The instructors were very helpful.",
-    image: "path/to/image3.jpg",
-  },
-  {
-    id: 4,
-    name: "Diana",
-    story: "Highly recommend to everyone!",
-    image: "path/to/image4.jpg",
-  },
-  {
-    id: 5,
-    name: "Ethan",
-    story: "Great experience overall.",
-    image: "path/to/image5.jpg",
-  },
-  {
-    id: 6,
-    name: "Fiona",
-    story: "Best driving school I've been to!",
-    image: "path/to/image6.jpg",
-  },
-  {
-    id: 7,
-    name: "George",
-    story: "Professional and friendly instructors.",
-    image: "path/to/image7.jpg",
-  },
-  {
-    id: 8,
-    name: "Hannah",
-    story: "I passed my test on the first try!",
-    image: "path/to/image8.jpg",
-  },
-  {
-    id: 9,
-    name: "Isaac",
-    story: "Flexible timings made it easier.",
-    image: "path/to/image9.jpg",
-  },
-  {
-    id: 10,
-    name: "Jack",
-    story: "Incredible support throughout my journey.",
-    image: "path/to/image10.jpg",
-  },
+  // Add more testimonials...
 ];
 
 function Story() {
@@ -71,7 +25,7 @@ function Story() {
     const interval = setInterval(() => {
       if (testimonialsRef.current) {
         testimonialsRef.current.scrollBy({
-          left: 300, // Scroll left by 300 pixels
+          left: testimonialsRef.current.offsetWidth / 3, // Adjust scroll amount dynamically
           behavior: "smooth",
         });
       }
@@ -81,10 +35,10 @@ function Story() {
   }, []);
 
   return (
-    <div className="w-full h-[500px] border flex-col black bg-gray-200 border-black">
-      <div className="w-full p-4  flex-col justify-center border items-center">
-        <h1 className="text-2xl font-bold text-center">Testimonial</h1>
-        <p className=" text-center">
+    <div className="w-full h-[500px] border flex-col bg-gray-200 border-black">
+      <div className="w-full p-4 flex-col justify-center items-center text-center">
+        <h1 className="text-2xl font-bold">Testimonial</h1>
+        <p>
           Our platform connects learners with driving schools, providing a
           flexible and affordable way to learn to drive.
         </p>
@@ -101,7 +55,7 @@ function Story() {
             >
               <img
                 src={testimonial.image}
-                alt={`Testimonial ${testimonial.id}`}
+                alt={`Testimonial from ${testimonial.name}`}
                 className="w-16 h-16 rounded-full mx-auto mb-2"
               />
               <h3 className="font-semibold">{testimonial.name}</h3>

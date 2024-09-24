@@ -46,13 +46,14 @@ const Numbers = () => {
       threshold: 0.5, // Trigger when 50% of the section is visible
     });
 
-    if (numbersSectionRef.current) {
-      observer.observe(numbersSectionRef.current);
+    const currentRef = numbersSectionRef.current; // Store the current ref value
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (numbersSectionRef.current) {
-        observer.unobserve(numbersSectionRef.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, [hasAnimated]);

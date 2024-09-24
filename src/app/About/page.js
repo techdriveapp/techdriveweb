@@ -1,16 +1,16 @@
 "use client"; // use client
 import React, { useEffect } from "react";
-import Image from "next/image";
+import Image from "next/image"; // Import Image from next/image
 
 const teamMembers = [
-  { name: "John Doe", position: "CEO", imageUrl: "team-member-image-url-1" },
-  { name: "Jane Smith", position: "CTO", imageUrl: "team-member-image-url-2" },
+  { name: "John Doe", position: "CEO", imageUrl: "/path/to/image1.jpg" },
+  { name: "Jane Smith", position: "CTO", imageUrl: "/path/to/image2.jpg" },
   {
     name: "Alice Johnson",
     position: "CMO",
-    imageUrl: "team-member-image-url-3",
+    imageUrl: "/path/to/image3.jpg",
   },
-  { name: "Bob Brown", position: "CFO", imageUrl: "team-member-image-url-4" },
+  { name: "Bob Brown", position: "CFO", imageUrl: "/path/to/image4.jpg" },
 ];
 
 const Page = () => {
@@ -84,10 +84,12 @@ const Page = () => {
                 key={index}
                 className="p-6 bg-gray-100 rounded-lg shadow-lg text-center"
               >
-                <img
-                  src={member.imageUrl}
+                <Image
+                  src={member.imageUrl} // Use Image component
                   alt={member.name}
-                  className="w-32 h-32 mx-auto rounded-full object-cover"
+                  width={128} // Specify width
+                  height={128} // Specify height
+                  className="mx-auto rounded-full object-cover"
                 />
                 <h3 className="mt-4 text-xl font-semibold text-gray-800">
                   {member.name}
