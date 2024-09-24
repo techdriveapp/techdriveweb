@@ -60,7 +60,7 @@ function Story() {
                 className="w-16 h-16 rounded-full mx-auto mb-2"
               />
               <h3 className="font-semibold">{testimonial.name}</h3>
-              <p>"{testimonial.story}"</p>
+              <p>{testimonial.story}</p>
             </div>
           ))}
         </div>
