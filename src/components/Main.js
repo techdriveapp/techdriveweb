@@ -13,17 +13,17 @@ function Main() {
         </h2>
         <p className="mt-2 md:mt-4 text-base md:text-lg text-gray-700">
           We, at TechDrive, believe that everyone deserves to be safe on the
-          road and this very concept has inspired us to launch TechDrive
-          Driving. Our mission is to transform you into a responsible driver who
-          navigates the streets with confidence and ease. With TechDrive, you’re
-          not just learning to drive you’re becoming road ready.
+          road and this very concept has inspired us to launch TechDrive. Our
+          mission is to transform you into a responsible driver who navigates
+          the streets with confidence and ease. With TechDrive, you’re not just
+          learning to drive you’re becoming road ready.
         </p>
         <p className="mt-2 md:mt-4 text-base md:text-lg text-gray-700">
-          At TechDrive Driving Academy, we offer a range of personalized driving
-          courses tailored to meet your individual needs. Our expert trainers
-          provide hands-on instruction that ensures you receive the support you
-          need to succeed. Our curriculum focuses on three key aspects of
-          driving: identification, judgment, and execution.
+          At TechDrive Team, we offer a range of personalized driving courses
+          tailored to meet your individual needs. Our expert trainers provide
+          hands-on instruction that ensures you receive the support you need to
+          succeed. Our curriculum focuses on three key aspects of driving:
+          identification, judgment, and execution.
         </p>
         <p className="mt-2 md:mt-4 text-base md:text-lg text-gray-700">
           Our START program is designed with empathy for novice drivers,

@@ -1,16 +1,55 @@
-import React from "react";
-
-import { PhotoIcon, UserCircleIcon } from "@heroicons/react/24/solid";
+"use client"; // use client
+import React, { useState } from "react";
+import axios from "axios";
 
 function Page() {
+  const [formData, setFormData] = useState({
+    firstname: "",
+    lastname: "",
+    email: "",
+    mobileNumber: "",
+    message: "",
+  });
+  const [submitMessage, setSubmitMessage] = useState("");
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormData((prevData) => ({ ...prevData, [name]: value }));
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    axios
+      .post("http://localhost:5000/api/createcontact", formData)
+      .then((response) => {
+        console.log(response.data);
+        setSubmitMessage(
+          "Your message has been sent successfully team will reach out to you shortly."
+        );
+        // Clear the form fields
+        setFormData({
+          firstname: "",
+          lastname: "",
+          email: "",
+          mobileNumber: "",
+          message: "",
+        });
+      })
+      .catch((error) => {
+        console.error(error);
+        setSubmitMessage("There was an error submitting your message.");
+      });
+  };
+
   return (
     <div className="bg-gray-200 flex flex-col items-center py-20">
-      <header className="w-full bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-black py-10 text-center shadow-lg">
-        <h1 className="text-3xl font-bold">Contact Us</h1>
+      <header className="w-full text-black py-10 text-center">
+        <h1 className="text-5xl font-bold">Contact Us</h1>
       </header>
 
       <div className="mt-10 w-full max-w-2xl bg-white rounded-lg shadow-md p-6">
-        <form>
+        <form onSubmit={handleSubmit}>
           <div className="space-y-8">
             <div className="pb-8">
               <h2 className="text-lg font-semibold leading-7 text-gray-900">
@@ -32,8 +71,10 @@ function Page() {
                   <div className="mt-2">
                     <input
                       id="first-name"
-                      name="first-name"
+                      name="firstname"
                       type="text"
+                      value={formData.firstname}
+                      onChange={handleChange}
                       autoComplete="given-name"
                       className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                     />
@@ -50,8 +91,10 @@ function Page() {
                   <div className="mt-2">
                     <input
                       id="last-name"
-                      name="last-name"
+                      name="lastname"
                       type="text"
+                      value={formData.lastname}
+                      onChange={handleChange}
                       autoComplete="family-name"
                       className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                     />
@@ -70,6 +113,8 @@ function Page() {
                       id="email"
                       name="email"
                       type="email"
+                      value={formData.email}
+                      onChange={handleChange}
                       autoComplete="email"
                       className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                     />
@@ -86,8 +131,10 @@ function Page() {
                   <div className="mt-2">
                     <input
                       id="phone"
-                      name="phone"
+                      name="mobileNumber"
                       type="tel"
+                      value={formData.mobileNumber}
+                      onChange={handleChange}
                       className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                     />
                   </div>
@@ -105,6 +152,8 @@ function Page() {
                       id="message"
                       name="message"
                       rows="4"
+                      value={formData.message}
+                      onChange={handleChange}
                       className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                       placeholder="Write your message here..."
                     ></textarea>
@@ -129,6 +178,9 @@ function Page() {
             </button>
           </div>
         </form>
+        {submitMessage && (
+          <div className="mt-4 text-center text-green-600">{submitMessage}</div>
+        )}
       </div>
 
       {/* Team Contact Information */}
@@ -141,10 +193,10 @@ function Page() {
         </p>
         <div className="mt-4">
           <p className="text-sm leading-6 text-gray-900">
-            Phone: <span className="font-medium">(123) 456-7890</span>
+            Phone: <span className="font-medium">+91-9120163229</span>
           </p>
           <p className="text-sm leading-6 text-gray-900">
-            Email: <span className="font-medium">support@example.com</span>
+            Email: <span className="font-medium">help@techdriveapp.in</span>
           </p>
         </div>
       </div>

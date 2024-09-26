@@ -10,7 +10,6 @@ export default function Home() {
   return (
     <div>
       <Hero />
-      <Main />
       <Numbers />
       <Client />
       <Partners />

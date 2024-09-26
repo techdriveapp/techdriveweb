@@ -1,7 +1,9 @@
 "use client"; // use client
 import React, { useState } from "react";
+import { useRouter } from "next/navigation"; // Import useRouter
 
 function Page() {
+  const router = useRouter(); // Initialize the router
   const [category, setCategory] = useState("drivingSchool");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
@@ -15,7 +17,15 @@ function Page() {
       );
       return;
     }
-    // Handle form submission here (password is valid)
+
+    // Navigate to the appropriate page based on the selected category
+    if (category === "drivingSchool") {
+      router.push("/Drivingschool"); // Replace with your driving school page path
+    } else if (category === "carDealership") {
+      router.push("/Cardelership"); // Replace with your car dealership page path
+    }
+
+    // Optional: log form submission for debugging
     console.log("Form submitted with category:", category);
   };
 

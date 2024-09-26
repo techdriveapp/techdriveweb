@@ -39,12 +39,9 @@ function Client() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <Image
-              src="" // Replace with actual image path
-              alt="Client 1"
-              className="w-32 h-32 rounded-full mx-auto mb-2"
-            />
-            <h2 className="text-xl font-semibold text-red-800">Client 1</h2>
+            <h2 className="text-xl font-semibold text-red-800">
+              Badshah Car Delership
+            </h2>
             <p className="text-gray-700">
               Experience a 3x increase in sales through TechDrive!
             </p>
@@ -57,12 +54,9 @@ function Client() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <Image
-              src="" // Replace with actual image path
-              alt="Client 2"
-              className="w-32 h-32 rounded-full mx-auto mb-2"
-            />
-            <h2 className="text-xl font-semibold text-green-800">Client 2</h2>
+            <h2 className="text-xl font-semibold text-green-800">
+              Shree Car Bajar
+            </h2>
             <p className="text-gray-700">
               Experience a 3x increase in sales through TechDrive!
             </p>
@@ -75,12 +69,9 @@ function Client() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <Image
-              src="" // Replace with actual image path
-              alt="Client 3"
-              className="w-32 h-32 rounded-full mx-auto mb-2"
-            />
-            <h2 className="text-xl font-semibold text-blue-800">Client 3</h2>
+            <h2 className="text-xl font-semibold text-blue-800">
+              Galaxy Motors
+            </h2>
             <p className="text-gray-700">
               Experience a 3x increase in sales through TechDrive!
             </p>
@@ -93,12 +84,9 @@ function Client() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <Image
-              src="" // Replace with actual image path
-              alt="Client 4"
-              className="w-32 h-32 rounded-full mx-auto mb-2"
-            />
-            <h2 className="text-xl font-semibold text-yellow-800">Client 4</h2>
+            <h2 className="text-xl font-semibold text-yellow-800">
+              Renault Varanasi
+            </h2>
             <p className="text-gray-700">
               Experience a 3x increase in sales through TechDrive!
             </p>
@@ -111,12 +99,22 @@ function Client() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <Image
-              src="" // Replace with actual image path
-              alt="Client 5"
-              className="w-32 h-32 rounded-full mx-auto mb-2"
-            />
-            <h2 className="text-xl font-semibold text-purple-800">Client 5</h2>
+            <h2 className="text-xl font-semibold text-purple-800">
+              Aditya automovers Pvt Ltd
+            </h2>
+            <p className="text-gray-700">
+              Experience a 3x increase in sales through TechDrive!
+            </p>
+          </motion.div>
+          <motion.div
+            className="bg-purple-200 p-4 rounded-lg shadow-3xl border text-center flex-shrink-0 w-[200px] sm:w-[250px] md:w-[300px]"
+            initial={{ opacity: 0, x: -100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <h2 className="text-xl font-semibold text-purple-800">
+              Kashi Motors 
+            </h2>
             <p className="text-gray-700">
               Experience a 3x increase in sales through TechDrive!
             </p>
