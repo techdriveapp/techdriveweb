@@ -19,7 +19,7 @@ function Page() {
         <div className="bg-white shadow-lg rounded-lg p-6 h-full flex flex-col">
           <h3 className="text-xl font-bold mb-2">Increased Sales</h3>
           <p>
-            Enhance your dealership's revenue by offering driving courses that
+            Enhance your dealerships revenue by offering driving courses that
             attract more customers.
           </p>
         </div>
@@ -34,14 +34,14 @@ function Page() {
           <h3 className="text-xl font-bold mb-2">Quality Assurance</h3>
           <p>
             Courses offered by Abhi Driving School ensure top-notch driving
-            education, enhancing customer trust.
+            education,enhancing customer trust.
           </p>
         </div>
         <div className="bg-white shadow-lg rounded-lg p-6 h-full flex flex-col">
           <h3 className="text-xl font-bold mb-2">Flexible Scheduling</h3>
           <p>
-            We offer flexible scheduling for driving lessons, accommodating your
-            customers' busy lives.
+            We offer flexible scheduling for driving lessons accommodating your
+            customers busy lives.
           </p>
         </div>
         <div className="bg-white shadow-lg rounded-lg p-6 h-full flex flex-col">
@@ -65,7 +65,7 @@ function Page() {
       </h2>
       <p className="text-xl text-white text-center mb-6">
         Partner with us to boost your sales and offer value to your customers.
-        For more details, contact us at{" "}
+        For more details contact us at{" "}
         <a href="/Contact" className="text-blue-200 underline">
           Click here
         </a>
