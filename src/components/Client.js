@@ -2,6 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 function Client() {
   return (
@@ -20,14 +21,15 @@ function Client() {
           Increase your sales today by connecting with us. Click the button
           below!
         </p>
-
-        <motion.button
-          className="relative bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-transform transform hover:scale-105 mb-8"
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.95 }}
-        >
-          <span className="relative z-10">Increase Your Sales</span>
-        </motion.button>
+        <Link href="/Contact">
+          <motion.button
+            className="relative bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-transform transform hover:scale-105 mb-8"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <span className="relative z-10">Increase Your Sales</span>
+          </motion.button>
+        </Link>
       </div>
 
       <div className="relative w-full overflow-hidden bottom-5">
@@ -113,7 +115,7 @@ function Client() {
             transition={{ duration: 0.5 }}
           >
             <h2 className="text-xl font-semibold text-purple-800">
-              Kashi Motors 
+              Kashi Motors
             </h2>
             <p className="text-gray-700">
               Experience a 3x increase in sales through TechDrive!
