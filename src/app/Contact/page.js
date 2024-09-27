@@ -21,7 +21,7 @@ function Page() {
     event.preventDefault();
 
     axios
-      .post("http://localhost:5000/api/createcontact", formData)
+      .post("https://techdriveserver.onrender.com/api/createcontact", formData)
       .then((response) => {
         console.log(response.data);
         setSubmitMessage(
@@ -76,7 +76,7 @@ function Page() {
                       value={formData.firstname}
                       onChange={handleChange}
                       autoComplete="given-name"
-                      className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                      className="block w-full px-2 rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                     />
                   </div>
                 </div>
@@ -96,7 +96,7 @@ function Page() {
                       value={formData.lastname}
                       onChange={handleChange}
                       autoComplete="family-name"
-                      className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                      className="block w-full px-2 rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                     />
                   </div>
                 </div>
@@ -116,7 +116,7 @@ function Page() {
                       value={formData.email}
                       onChange={handleChange}
                       autoComplete="email"
-                      className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                      className="block w-full px-2 rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                     />
                   </div>
                 </div>
@@ -135,7 +135,7 @@ function Page() {
                       type="tel"
                       value={formData.mobileNumber}
                       onChange={handleChange}
-                      className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                      className="block w-full px-2 rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                     />
                   </div>
                 </div>
@@ -154,7 +154,7 @@ function Page() {
                       rows="4"
                       value={formData.message}
                       onChange={handleChange}
-                      className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                      className="block w-full px-2 rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                       placeholder="Write your message here..."
                     ></textarea>
                   </div>

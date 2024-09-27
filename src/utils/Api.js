@@ -5,8 +5,8 @@ export const backendBaseUrl = "http://localhost:5000";
 export const contect = async (data) => {
   try {
     return await axios.post(
-      "http://localhost:5000/api/createcontact",
-      //   "https://milanbackend-7gvf.onrender.com/api/register",
+      // "http://localhost:5000/api/createcontact",
+      "https://techdriveserver.onrender.com/api/createcontact",
       data
     );
   } catch (error) {
@@ -17,8 +17,8 @@ export const contect = async (data) => {
 export const getmessage = async (data) => {
   try {
     return await axios.post(
-      "http://localhost:5000/api/getcontact",
-      //   "https://milanbackend-7gvf.onrender.com/api/register",
+      // "http://localhost:5000/api/getcontact",
+      "https://techdriveserver.onrender.com/api/getcontact",
       data
     );
   } catch (error) {

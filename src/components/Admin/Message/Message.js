@@ -7,7 +7,7 @@ function Message() {
 
   const fetchMessages = () => {
     axios
-      .get("http://localhost:5000/api/getcontact") // Change to your actual API endpoint
+      .get("https://techdriveserver.onrender.com/api/getcontact") // Change to your actual API endpoint
       .then((response) => {
         // Access the 'contact' field inside the response object
         setMessages(response.data.contact);
