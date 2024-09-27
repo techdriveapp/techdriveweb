@@ -7,9 +7,8 @@ function Main() {
         <h1 className="text-3xl md:text-5xl font-bold text-gray-800 text-center">
           Welcome to TechDrive
         </h1>
-        <h2 className="text-2xl md:text-4xl font-semibold text-gray-600 underline">
-          DRIVE RIGHT.
-          <p className="text-xl md:text-3xl no-underline">DRIVE SAFE.</p>
+        <h2 className="text-lg md:text-3xl font-semibold mt-5 text-blue-600 ">
+          DRIVE RIGHT.DRIVE SAFE.
         </h2>
         <p className="mt-2 md:mt-4 text-base md:text-lg text-gray-700">
           We, at TechDrive, believe that everyone deserves to be safe on the

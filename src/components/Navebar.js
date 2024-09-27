@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react"; // Import useEffect
 import Link from "next/link";
 import { RiMenu3Fill, RiCloseFill } from "react-icons/ri";
+import { ImMenu } from "react-icons/im";
 import { useRouter } from "next/navigation"; // Adjusted import from next/navigation
 
 function Navbar() {
@@ -168,13 +169,31 @@ function Navbar() {
                   Register
                 </button>
               </Link> */}
-              <Link href="/Logins">
-                <button
-                  type="button"
-                  className="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-6 focus:ring-blue-300 font-medium rounded-full text-md px-5 py-2.5 text-center"
-                >
+
+              <Link
+                href="/Logins"
+                class="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-blue-600 transition duration-300 ease-out border-2 border-white rounded-full shadow-md group"
+              >
+                <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-blue-500 group-hover:translate-x-0 ease">
+                  <svg
+                    class="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M14 5l7 7m0 0l-7 7m7-7H3"
+                    ></path>
+                  </svg>
+                </span>
+                <span class="absolute flex items-center justify-center w-full h-full text-white transition-all duration-300 transform group-hover:translate-x-full ease">
                   Login
-                </button>
+                </span>
+                <span class="relative invisible">Login</span>
               </Link>
             </>
           )}
@@ -185,7 +204,7 @@ function Navbar() {
             onClick={toggleMenu}
             className="text-gray-800 focus:outline-none"
           >
-            <RiMenu3Fill className="w-8 h-8" />
+            <ImMenu className="w-8 h-8 " />
           </button>
         </div>
       </div>

@@ -27,8 +27,8 @@ function Footer() {
             <div className="text-center lg:text-left">
               <h2 className="text-xs">Local Office Address:</h2>
               <address className="text-xs not-italic leading-snug">
-                TechDrive Office, Plot No. 21, <br />
-                Sector 62, Noida, Uttar Pradesh 201301
+                TechDrive Office, Plot No. A-17, <br />
+                Sector 65, Noida, Uttar Pradesh 201301
               </address>
             </div>
 
@@ -96,6 +96,7 @@ function Footer() {
                 Current Cities
               </h2>
               <ul className="list-none">
+                <li>Mirzapur, UP</li>
                 <li>Varanasi, UP</li>
                 <li>Noida, UP</li>
                 <li>Delhi</li>
